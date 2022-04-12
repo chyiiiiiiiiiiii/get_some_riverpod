@@ -11,14 +11,14 @@ final ChangeNotifierProvider<PersonNotifier> personProvider = ChangeNotifierProv
 });
 
 class PersonNotifier extends ChangeNotifier {
-  String _name = "Yii";
+  String _name = 'Yii';
   String get name => _name;
   set name(String nv) {
     _name = nv;
     notifyListeners();
   }
 
-  String _gender = "male";
+  String _gender = 'male';
   String get gender => _gender;
   set gender(String nv) {
     _gender = nv;
@@ -43,7 +43,7 @@ class SelectPage extends StatelessWidget {
             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20.0)),
             child: const SafeArea(
               child: Text(
-                "Provider Select",
+                'Provider Select',
                 style: TextStyle(fontSize: 32.0),
               ),
             ),
@@ -54,7 +54,7 @@ class SelectPage extends StatelessWidget {
               children: [
                 Consumer(
                   builder: (context, ref, _) {
-                    debugPrint("personProvider - state changed - name");
+                    debugPrint('personProvider - state changed - name');
                     final String name = ref.watch(personProvider.select((value) => value.name));
                     // 如果使用一般的監聽方式，狀態中的任一數值在更新後都會通知UI更新
                     // final String name = ref.watch(personProvider).name;
@@ -66,7 +66,7 @@ class SelectPage extends StatelessWidget {
                 ),
                 Consumer(
                   builder: (context, ref, _) {
-                    debugPrint("personProvider - state changed - gender");
+                    debugPrint('personProvider - state changed - gender');
                     final String gender = ref.watch(personProvider.select((value) => value.gender));
                     return Text(
                       gender,
@@ -88,14 +88,14 @@ class SelectPage extends StatelessWidget {
             FloatingActionButton(
               heroTag: '1',
               onPressed: () {
-                notifier.name = notifier.name == "Lina" ? "Yii" : "Lina";
+                notifier.name = notifier.name == 'Lina' ? 'Yii' : 'Lina';
               },
               child: const Icon(Icons.refresh_rounded),
             ),
             FloatingActionButton(
               heroTag: '2',
               onPressed: () {
-                notifier.gender = notifier.gender == "male" ? "female" : "male";
+                notifier.gender = notifier.gender == 'male' ? 'female' : 'male';
               },
               child: const Icon(Icons.refresh_rounded),
             ),

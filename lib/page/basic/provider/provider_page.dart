@@ -27,7 +27,7 @@ class ProviderPage extends ConsumerWidget {
             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20.0)),
             child: const SafeArea(
               child: Text(
-                "Provider\n(ConsumerWidget)",
+                'Provider\n(ConsumerWidget)',
                 style: TextStyle(fontSize: 32.0),
               ),
             ),

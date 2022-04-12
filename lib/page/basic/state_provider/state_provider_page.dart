@@ -30,7 +30,7 @@ class StateProviderPage extends ConsumerWidget {
             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20.0)),
             child: const SafeArea(
               child: Text(
-                "StateProvider",
+                'StateProvider',
                 style: TextStyle(fontSize: 32.0),
               ),
             ),

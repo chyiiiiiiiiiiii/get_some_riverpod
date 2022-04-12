@@ -28,7 +28,7 @@ class FamilyPage extends StatelessWidget {
             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20.0)),
             child: const SafeArea(
               child: Text(
-                "Provider.family",
+                'Provider.family',
                 style: TextStyle(fontSize: 32.0),
               ),
             ),
@@ -37,7 +37,7 @@ class FamilyPage extends StatelessWidget {
             child: Center(
               child: Consumer(
                 builder: (context, ref, _) {
-                  final String message = ref.watch(helloWorldProvider("Yii"));
+                  final String message = ref.watch(helloWorldProvider('Yii'));
                   return Text(
                     message,
                     style: myBigTextStyle,

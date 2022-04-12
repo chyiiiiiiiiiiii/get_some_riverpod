@@ -30,7 +30,7 @@ class Location {
     final String country = providerRef.read(countryProvider);
     final String city = providerRef.read(cityProvider);
     final String weather = providerRef.watch(weatherProvider);
-    return "$country - $city - $weather";
+    return '$country - $city - $weather';
   }
 }
 
@@ -51,7 +51,7 @@ class CombiningPage2 extends ConsumerWidget {
             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20.0)),
             child: const SafeArea(
               child: Text(
-                "Provider Combining 2",
+                'Provider Combining 2',
                 style: TextStyle(fontSize: 32.0),
               ),
             ),
@@ -77,9 +77,9 @@ class CombiningPage2 extends ConsumerWidget {
         onPressed: () {
           final StateController stateController = ref.read(weatherProvider.notifier);
           if (stateController.state == 'sunny') {
-            stateController.state = "cloudy";
+            stateController.state = 'cloudy';
           } else {
-            stateController.state = "sunny";
+            stateController.state = 'sunny';
           }
         },
         child: const Icon(Icons.refresh_rounded),

@@ -24,9 +24,9 @@ class WidgetRefListenPage extends ConsumerWidget {
     final int count = ref.watch(counterProvider.state).state;
 
     ref.listen<int>(counterProvider, (previousState, nextState) {
-      debugPrint("WidgetRef.listen() - state changed - previousState($previousState), nextState($nextState)");
+      debugPrint('WidgetRef.listen() - state changed - previousState($previousState), nextState($nextState)');
       Fluttertoast.showToast(
-          msg: "WidgetRef.listen() - state changed - previousState($previousState), nextState($nextState)");
+          msg: 'WidgetRef.listen() - state changed - previousState($previousState), nextState($nextState)');
     });
 
     return Scaffold(
@@ -39,7 +39,7 @@ class WidgetRefListenPage extends ConsumerWidget {
             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20.0)),
             child: const SafeArea(
               child: Text(
-                "WidgetRef.listen()",
+                'WidgetRef.listen()',
                 style: TextStyle(fontSize: 32.0),
               ),
             ),

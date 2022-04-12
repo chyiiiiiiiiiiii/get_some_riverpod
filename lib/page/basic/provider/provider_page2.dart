@@ -29,7 +29,7 @@ class _ProviderPage2State extends State<ProviderPage2> {
             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20.0)),
             child: const SafeArea(
               child: Text(
-                "Provider\n(Consumer)",
+                'Provider\n(Consumer)',
                 style: TextStyle(fontSize: 32.0),
               ),
             ),

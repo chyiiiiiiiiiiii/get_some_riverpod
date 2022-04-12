@@ -45,7 +45,7 @@ class AutoDisposePage extends StatelessWidget {
             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20.0)),
             child: const SafeArea(
               child: Text(
-                "Provider.autoDispose",
+                'Provider.autoDispose',
                 style: TextStyle(fontSize: 32.0),
               ),
             ),

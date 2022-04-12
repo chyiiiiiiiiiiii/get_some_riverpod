@@ -12,7 +12,7 @@ import '../../../other/theme.dart';
 final FutureProvider<List<String>> itemsProvider = FutureProvider<List<String>>((ref) {
   return List.generate(
     50,
-    (index) => "Item $index - ${Random().nextInt(1000).toString()}",
+    (index) => 'Item $index - ${Random().nextInt(1000).toString()}',
   );
 });
 
@@ -31,7 +31,7 @@ class RefreshPage extends StatelessWidget {
             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20.0)),
             child: const SafeArea(
               child: Text(
-                "Provider Refresh",
+                'Provider Refresh',
                 style: TextStyle(fontSize: 32.0),
               ),
             ),

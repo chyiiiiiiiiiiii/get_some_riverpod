@@ -26,7 +26,7 @@ class Location {
   String get info {
     final String country = providerRef.read(countryProvider);
     final String city = providerRef.read(cityProvider);
-    return "$country, $city";
+    return '$country, $city';
   }
 }
 
@@ -47,7 +47,7 @@ class CombiningPage extends StatelessWidget {
             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20.0)),
             child: const SafeArea(
               child: Text(
-                "Provider Combining",
+                'Provider Combining',
                 style: TextStyle(fontSize: 32.0),
               ),
             ),
