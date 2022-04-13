@@ -9,18 +9,11 @@ void main() {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [feedsRepositoryProvider.overrideWithValue(MockFeedRepository())],
-        child: const MyApp(),
+        child: MyApp(),
       ),
     );
-
-    await tester.scrollUntilVisible(find.textContaining('FeedPage'), 500.0);
-    await tester.pump();
-
-    await tester.tap(find.textContaining('FeedPage'));
-    await tester.pump();
-
-    expect(find.text('I am Spiderman'), findsNothing);
-    expect(find.text('I am test 2'), findsOneWidget);
-    expect(find.text('I am test 3'), findsOneWidget);
+    expect(find.textContaining('StateProvider'), findsOneWidget);
+    // expect(find.text('I am test 2'), findsNothing);
+    // expect(find.text('I am test 3'), findsOneWidget);
   });
 }
