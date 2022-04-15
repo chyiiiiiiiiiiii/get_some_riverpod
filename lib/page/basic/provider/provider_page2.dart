@@ -2,12 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../other/theme.dart';
-
-Provider<String> helloWorldProvider = Provider((ref) {
-  return 'Hello World~';
-});
-
-//----------------------------------------------------------------
+import 'provider_page.dart';
 
 class ProviderPage2 extends StatefulWidget {
   const ProviderPage2({Key? key}) : super(key: key);

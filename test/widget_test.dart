@@ -5,7 +5,6 @@ import 'package:get_some_riverpod/for_test/feed_page.dart';
 import 'package:get_some_riverpod/for_test/feed_repository.dart';
 
 void main() {
-
   /// should see empty data in first frame, then get new mock-data after async operation in the second frame
   /// Warn: can not make sure this process can pass in real situation, like data from server
   testWidgets(

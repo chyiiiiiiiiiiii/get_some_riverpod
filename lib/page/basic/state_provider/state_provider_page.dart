@@ -60,8 +60,8 @@ class StateProviderPage extends ConsumerWidget {
             heroTag: '2',
             onPressed: () {
               // ref.read(counterProvider.notifier).state++;
-              // 使用update()，可以取得目前的狀態，並使用此狀態進行更新
-              ref.read(counterProvider.notifier).update((currentState) => currentState++);
+              // 使用update()，可以取得目前的狀態，並使用此狀態進行更新。整數用++不會更新哦
+              ref.read(counterProvider.notifier).update((currentState) => currentState + 1);
             },
             child: const Icon(Icons.add),
           )

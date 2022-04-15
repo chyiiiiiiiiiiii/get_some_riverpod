@@ -5,10 +5,14 @@ import '../../other/theme.dart';
 
 /// [ Provider ]
 /// family，修飾符
-/// 取得provider時可以添加一個參數，限基礎型別
+/// 取得provider時可以添加一個參數
 
-final helloWorldProvider = Provider.family<String, String>((ref, name) {
-  return 'Hello World~ $name';
+class Person {
+  String name = 'Jack';
+}
+
+final helloWorldProvider = Provider.family<String, Person>((ref, person) {
+  return 'Hello World~ ${person.name}';
 });
 
 //----------------------------------------------------------------
@@ -37,7 +41,7 @@ class FamilyPage extends StatelessWidget {
             child: Center(
               child: Consumer(
                 builder: (context, ref, _) {
-                  final String message = ref.watch(helloWorldProvider('Yii'));
+                  final String message = ref.watch(helloWorldProvider(Person()));
                   return Text(
                     message,
                     style: myBigTextStyle,

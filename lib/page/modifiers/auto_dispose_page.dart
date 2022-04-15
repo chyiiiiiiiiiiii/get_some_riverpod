@@ -14,7 +14,8 @@ class Configration {
   });
 }
 
-final getConfigrationProvider = FutureProvider.autoDispose<Configration>((ref) async {
+final getConfigrationProvider = FutureProvider.autoDispose<Configration>(
+  (ref) async {
     // 停止使用provider的時候，可以進行一些服務的記憶體釋放
     ref.onDispose(() {
       debugPrint('FutureProvider.autoDispose - onDispose()');
@@ -26,7 +27,8 @@ final getConfigrationProvider = FutureProvider.autoDispose<Configration>((ref) a
     // 如果失敗，則不要使用此函式，下次進入頁面會再次執行該非同步操作
     ref.maintainState = true;
     return configration;
-  });
+  },
+);
 
 //----------------------------------------------------------------
 
