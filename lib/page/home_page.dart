@@ -13,8 +13,10 @@ import 'basic/provider/provider_page.dart';
 import 'basic/provider/provider_page2.dart';
 import 'basic/provider_scope/provider_scope_page.dart';
 import 'basic/state_notifier_provider/state_notifier_provider_page.dart';
+import 'basic/state_notifier_provider/state_notifier_provider_page2.dart';
 import 'basic/state_provider/state_provider_page.dart';
 import 'basic/stream_provider/stream_provider_page.dart';
+import 'basic/stream_provider/stream_provider_page2.dart';
 import 'modifiers/auto_dispose_page.dart';
 import 'modifiers/family_page.dart';
 
@@ -33,9 +35,11 @@ List<_Option> getOptions() {
     _Option(title: 'Provider 2', page: const ProviderPage2()),
     _Option(title: 'StateProvider', page: StateProviderPage()),
     _Option(title: 'StateNotifierProvider', page: StateNotifierProviderPage()),
+    _Option(title: 'StateNotifierProvider2', page: const StateNotifierProviderPage2()),
     _Option(title: 'ChangeNotifierProvider', page: ChangeNotifierProviderPage()),
     _Option(title: 'FutureProvider', page: FutureProviderPage()),
     _Option(title: 'StreamProvider', page: StreamProviderPage()),
+    _Option(title: 'StreamProvider2', page: StreamProviderPage2()),
     _Option(title: 'WidgetRef.listen()', page: WidgetRefListenPage()),
     _Option(title: 'ProviderScope - override value', page: const ProviderScopeOverridePage()),
     _Option(title: 'Provider.family', page: const FamilyPage()),
