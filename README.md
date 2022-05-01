@@ -6,7 +6,7 @@
 </p>
 
 ## Introduction
-此專案包含大部分Riverpod的使用方式與案例，照著上面的範例練習，很快就能熟悉Riverpod並掌握它對於專案的好處
+此專案實作Riverpod常用情境，包含許多範例，每一種Provider的使用、修飾符還有進階用法
 
 ## Artical
 - [Riverpod 輕鬆學，原來這麼好用！](https://ab20803.medium.com/riverpod-%E8%BC%95%E9%AC%86%E5%AD%B8-%E5%8E%9F%E4%BE%86%E9%80%99%E9%BA%BC%E5%A5%BD%E7%94%A8-7e7b231570bc)
