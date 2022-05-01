@@ -1,5 +1,10 @@
 # get_some_riverpod
 
+<p>
+  <img src="demo/app.png" width="200" />
+  <img src="demo/app_2.png" width="200" />
+</p>
+
 ## Introduction
 此專案包含大部分Riverpod的使用方式與案例，照著上面的範例練習，很快就能熟悉Riverpod並掌握它對於專案的好處
 
